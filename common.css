@@ -1,0 +1,46 @@
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.box {
+	position: relative; /*Posição relativa à posição estática para possibilitar deslocamento lateral*/
+	width: 940px; /*Limita a largura para sobrar margens*/
+	margin: 0 auto; /*Margens laterais iguais e calculadas automaticamente*/
+}
+
+nav {
+	position: absolute; /*Posição absoluta em relação à página*/
+	top: 110px; /*Altura do elemento em relação à página*/
+	right: 0; /*Margem direita do elemento em relação à página*/
+}
+
+nav li {
+	display: inline; /*Possibilita a exibição dos itens lado a lado, pois cada item não bloqueará mais sua linha toda*/
+	margin: 0 0 0 15px; /*Cada item com margem à esquerda*/
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover { /*hover: Quando o cursor do mouse passa por cima do elemento*/
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg"); /*Textura do background*/
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}

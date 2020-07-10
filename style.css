@@ -1,5 +1,6 @@
 #banner {
 	width: 100%;
+	margin: -5px; /*Por que precisou?*/
 }
 
 .main {
@@ -7,29 +8,29 @@
 	padding: 30px;
 }
 
-.main-title {
-	padding-left: 20px;	
+.title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 20px;
 }
 
-.centralized-title {
+.main p {
+	margin: 20px 0;
 	text-align: center;
 }
 
-p {
-	text-align: center;
+strong {
+	font-weight: bold;
 }
 
 #mission {
 	font-size: 20px;
+	font-style: italic;
 }
 
 em strong {
 	color: #FF0000;
-}
-
-.itens {
-	font-style: italic;
-
 }
 
 .benefits {
@@ -37,11 +38,16 @@ em strong {
 	padding: 20px;
 }
 
-ul {
+.benefits ul {
 	display: inline-block;
 	vertical-align: top;
 	width: 20%;
 	margin-right: 15%;
+}
+
+.itens {
+	font-style: italic;
+	list-style-type: circle;
 }
 
 .benefits-img {

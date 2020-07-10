@@ -1,34 +1,3 @@
-header {
-	background: #BBBBBB;
-	padding: 20px 0;
-}
-
-.box {
-	position: relative; /*Posição relativa à posição estática para possibilitar deslocamento lateral*/
-	width: 940px; /*Limita a largura para sobrar margens*/
-	margin: 0 auto; /*Margens laterais iguais e calculadas automaticamente*/
-}
-
-nav {
-	position: absolute; /*Posição absoluta em relação à página*/
-	top: 110px; /*Altura do elemento em relação à página*/
-	right: 0; /*Margem direita do elemento em relação à página*/
-
-}
-
-nav li {
-	display: inline; /*Possibilita a exibição dos itens lado a lado, pois cada item não bloqueará mais sua linha toda*/
-	margin: 0 0 0 15px; /*Cada item com margem à esquerda*/
-}
-
-nav a {
-	text-transform: uppercase;
-	color: #000000;
-	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
-}
-
 .products {
 	width: 940px;
 	margin: 0 auto;
@@ -40,7 +9,25 @@ nav a {
 	text-align: center;
 	width: 30%;
 	vertical-align: top;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+}
 
+.products li:hover {
+	border-color: #C78C19;
+
+}
+
+.products li:active { /*hover: Quando o cursor do mouse clica no elemento*/
+	border-color: #088C19;
+
+}
+
+.products li:hover h2 { /*Quando o cursor do mouse passar por cima de ".products li", mudará o comportamento do "h2", interno*/
+	font-size: 34px;
 }
 
 .products h2 {
@@ -55,4 +42,5 @@ nav a {
 .product-price {
 	font-size: 22px;
 	font-weight: bold;
+	margin: 10px 0 0; /*margin-top: 10px;*/
 }
