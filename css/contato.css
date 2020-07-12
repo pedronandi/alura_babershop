@@ -1,0 +1,25 @@
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, p {
+	display: block; /*Força o elemento a ocupar toda uma linha*/
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.default-input { /*Nem todos os inputs do formulário devem ser alterados*/
+	display: block; /*Força o elemento a ocupar toda uma linha*/
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}

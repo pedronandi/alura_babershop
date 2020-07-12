@@ -35,7 +35,7 @@ nav a:hover { /*hover: Quando o cursor do mouse passa por cima do elemento*/
 
 footer {
 	text-align: center;
-	background: url("bg.jpg"); /*Textura do background*/
+	background: url("../img/bg.jpg"); /*Textura do background*/
 	padding: 40px 0;
 }
 
