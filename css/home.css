@@ -1,6 +1,5 @@
-#banner {
+.banner {
 	width: 100%;
-	margin: -5px; /*Por que precisou?*/
 }
 
 .main {
@@ -8,20 +7,31 @@
 	padding: 30px;
 }
 
-.title {
+.main-title {
 	text-align: center;
 	font-weight: bold;
-	font-size: 20px;
-	padding: 20px;
+	font-size: 2em; /*em: Medida proporcional do pixel. 2em = ex o tamanho da fonte base*/
+	padding: 0 0 1em;
+	clear: left; /*Anula o efeito do float (que está declarado no elemento de cima)*/
+
 }
 
 .main p {
-	margin: 20px 0;
-	text-align: center;
+	margin: 0 0 1em;
 }
 
-strong {
+.main strong {
 	font-weight: bold;
+}
+
+.main em {
+	font-style: italic;
+}
+
+.utl-img {
+	width: 120px;
+	float: left; /*O elemento destoa da página, porém seu espaço, em baixo, fica ocupado, não sendo ocupado por outro elemento*/
+	margin: 0 20px 20px 0;
 }
 
 #mission {
@@ -51,5 +61,5 @@ em strong {
 }
 
 .benefits-img {
-	width: 50%;
+	width: 60%;
 }
