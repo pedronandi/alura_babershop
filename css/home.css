@@ -3,8 +3,10 @@
 }
 
 .main {
-	background: #CCCCCC;
-	padding: 30px;
+	background: #FEFEFE;
+	padding: 3em 0;
+	width: 940px;
+	margin: 0 auto;
 }
 
 .main-title {
@@ -13,7 +15,6 @@
 	font-size: 2em; /*em: Medida proporcional do pixel. 2em = ex o tamanho da fonte base*/
 	padding: 0 0 1em;
 	clear: left; /*Anula o efeito do float (que está declarado no elemento de cima)*/
-
 }
 
 .main p {
@@ -28,7 +29,7 @@
 	font-style: italic;
 }
 
-.utl-img {
+.main-img {
 	width: 120px;
 	float: left; /*O elemento destoa da página, porém seu espaço, em baixo, fica ocupado, não sendo ocupado por outro elemento*/
 	margin: 0 20px 20px 0;
@@ -43,23 +44,55 @@ em strong {
 	color: #FF0000;
 }
 
-.benefits {
-	background: #FFFFFF;
-	padding: 20px;
+.map {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888); /*Fazendo o gradiente da primeira pra segunda cor*/
 }
 
-.benefits ul {
+.map p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.map-box {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.benefits {
+	background: #888888;
+	padding: 3em 0;
+}
+
+.benefits-content {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.benefits-list {
+	width: 40%;
 	display: inline-block;
 	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
 }
 
-.itens {
+.benefits-itens {
+	line-height: 1.5; /*Espaçamento da linha*/
 	font-style: italic;
-	list-style-type: circle;
 }
 
-.benefits-img {
+.benefits-itens:nth-child(2n) {
+	font-weight: bold;
+}
+
+.benefits-itens:before {
+	content: "＊";
+}
+
+.benefits-image {
 	width: 60%;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
 }
