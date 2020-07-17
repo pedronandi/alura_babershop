@@ -48,3 +48,23 @@ footer {
 	font-size: 13px;
 	margin: 20px 0 0;
 }
+
+/*
+Media Queries: 
+  Perguntar ao navegador qual o tamanho da tela
+  De acordo com a resposta, podemos entregar um estilo diferente
+  Ex: Para dispositivos de tela com largura máxima de 480px
+ */
+@media screen and (max-width: 480px) {
+	.box {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+}
