@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Contact - Alura Barbershop</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/contact.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<!--Envelopa os itens do cabeçalho para possibilitar a edição das margens laterais-->
+			<div class="box">
+				<h1><img src="img/logo.png" alt="Alura Barbershop' logo"></h1>
+				
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="fullName">Full Name:</label>
+				<input type="text" id="fullName" class="default-input" required>
+
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" class="default-input" required placeholder="youremail@domain.com">
+
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" class="default-input" required placeholder="(XX)XXXXX-XXXX">
+
+				<label for="message">Message:</label>
+				<textarea id="message" rows="10" class="default-input" required></textarea>
+
+				<fieldset> <!--Separa informações com um mesmo propósito, como uma <div>-->
+					<legend>How do we contact you?</legend> <!--título de um fieldset-->
+
+					<label for="radio-email">
+						<input type="radio" value="email" id="radio-email" name="contac"> E-mail
+					</label>
+					<label for="radio-phone">
+						<input type="radio" value="phone" id="radio-phone" name="contac"> Phone
+					</label>
+					<label for="radio-whatsapp">
+						<input type="radio" value="whatsapp" id="radio-whatsapp" name="contact" checked> WhatsApp
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Day period?</legend>
+					<select>
+						<option>Morning</option>
+						<option>Afternoon</option>
+						<option>Evening</option>
+					</select>
+				</fieldset>
+
+				<label><input type="checkbox" class="checkbox" checked> Would you like to receive some news by e-mail?</label>
+
+				<input type="submit" value="Send Form" class="send">
+			</form>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Weekday</th>
+						<th>Schedule</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Monday</td>
+						<td>8h to 20h</td>
+					</tr>
+					<tr>
+						<td>Wednesday</td>
+						<td>8h to 20h</td>
+					</tr>
+					<tr>
+						<td>Friday</td>
+						<td>8h to 20h</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		<footer>
+			<img src="img/white-logo.png" alt="Alura Barbershop' logo">
+			<p class="copyright">&copy; Copyright Alura Barbershop - 2020</p>
+		</footer>
+	</body>
+</html>
