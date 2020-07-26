@@ -1,0 +1,29 @@
+.contentSize_aboutAlura {
+	background: #FEFEFE;
+	padding: 3em 0;
+}
+
+.contentSize_aboutAlura p {
+	margin: 0 0 1em;
+	text-align: justify;
+}
+
+.aboutAlura-img {
+	width: 120px;
+	float: left; /* the element elevates from the page, but the space, bellow, is still occupied */
+	margin: 0 20px 20px 0;
+}
+
+#aboutAlura-mission {
+	font-size: 20px;
+}
+
+@media screen and (max-width: 820px) {
+	.contentSize_aboutAlura {
+		padding: 3em 1em;
+	}
+
+	.aboutAlura p {
+		font-size: 1em;
+	}	
+}

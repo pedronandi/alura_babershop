@@ -1,0 +1,14 @@
+.contactTable {
+	margin: 20px 0;
+}
+
+.contactTable thead {
+	background: #555555;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.contactTable td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}

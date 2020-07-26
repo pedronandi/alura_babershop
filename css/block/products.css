@@ -1,10 +1,8 @@
-.products {
-	width: 940px;
-	margin: 0 auto;
+.contentSize_products {
 	padding: 50px 0;
 }
 
-.products li {
+.contentSize_products li {
 	display: inline-block;
 	text-align: center;
 	width: 30%;
@@ -16,23 +14,21 @@
 	box-sizing: border-box;
 }
 
-.products li:hover {
-	border-color: #C78C19;
-
-}
-
-.products li:active { /*hover: Quando o cursor do mouse clica no elemento*/
-	border-color: #088C19;
-
-}
-
-.products li:hover h2 { /*Quando o cursor do mouse passar por cima de ".products li", mudará o comportamento do "h2", interno*/
-	font-size: 34px;
-}
-
-.products h2 {
+.contentSize_products h2 {
 	font-size: 30px;
 	font-weight: bold;
+}
+
+.contentSize_products li:hover {
+	border-color: #C78C19;
+}
+
+.contentSize_products li:active { /* hover: when the mouse's cursor clicks on the element */
+	border-color: #088C19;
+}
+
+.contentSize_products li:hover h2 { /* when the cursor pass over "li" it'll change the behavior of inner "h2" */
+	font-size: 34px;
 }
 
 .product-description {
@@ -42,15 +38,11 @@
 .product-price {
 	font-size: 22px;
 	font-weight: bold;
-	margin: 10px 0 0; /*margin-top: 10px;*/
+	margin: 10px 0 0; /* margin-top: 10px; */
 }
 
 @media screen and (max-width: 480px) {
-	.products {
-		width: auto;
-	}
-
-	.products li {
+	.contentSize_products li {
 		display: block;
 		margin: 3% 3%;
 		width: auto;
@@ -58,21 +50,17 @@
 }
 
 @media screen and (max-width: 820px) {
-	.products {
-		width: auto;
-	}
-
-	.products li {
+	.contentSize_products li {
 		margin: 3% 1.4%;
 		padding: 30px 5px;
 	}
 
-	.products h2 {
+	.contentSize_products h2 {
 		font-size: 25px;
 		font-weight: bold;
 	}
 
-	.products li:hover h2 {
+	.contentSize_products li:hover h2 {
 		font-size: 30px;
 	}
 

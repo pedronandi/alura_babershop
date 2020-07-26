@@ -1,0 +1,19 @@
+.location {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888); /* building the gradient of these colors */
+}
+
+.location p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+@media screen and (max-width: 820px) {
+	.location {
+		padding: 3em 1em;
+	}
+
+	.location p {
+		font-size: 1em;
+	}	
+}

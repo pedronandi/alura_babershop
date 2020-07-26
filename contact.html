@@ -6,27 +6,30 @@
 		<title>Contact - Alura Barbershop</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/contact.css">
+		<link rel="stylesheet" href="css/block/header.css">
+		<link rel="stylesheet" href="css/block/contactForm.css">
+		<link rel="stylesheet" href="css/block/contactTable.css">
+		<link rel="stylesheet" href="css/block/footer.css">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<header>
-			<!--Envelopa os itens do cabeçalho para possibilitar a edição das margens laterais-->
-			<div class="box">
-				<h1><img src="img/logo.png" alt="Alura Barbershop' logo"></h1>
+		<header class="header">
+			<!--div is visual block, a division with no semantics purpose-->
+			<div class="contentSize contentSize_position">
+				<h1><img src="img/logo.png" alt="Alura Barbershop's logo"></h1>
 				
-				<nav>
+				<nav class="header-content-nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="products.html">Products</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 
-		<main>
-			<form>
+		<main class="contentSize">
+			<form class="contactForm">
 				<label for="fullName">Full Name:</label>
 				<input type="text" id="fullName" class="default-input" required>
 
@@ -39,8 +42,8 @@
 				<label for="message">Message:</label>
 				<textarea id="message" rows="10" class="default-input" required></textarea>
 
-				<fieldset> <!--Separa informações com um mesmo propósito, como uma <div>-->
-					<legend>How do we contact you?</legend> <!--título de um fieldset-->
+				<fieldset> <!--another segregation tag with semantics purpose-->
+					<legend>How do we contact you?</legend> <!--title of a fieldset-->
 
 					<label for="radio-email">
 						<input type="radio" value="email" id="radio-email" name="contac"> E-mail
@@ -67,7 +70,7 @@
 				<input type="submit" value="Send Form" class="send">
 			</form>
 
-			<table>
+			<table class="contactTable">
 				<thead>
 					<tr>
 						<th>Weekday</th>
@@ -91,9 +94,9 @@
 			</table>
 		</main>
 
-		<footer>
-			<img src="img/white-logo.png" alt="Alura Barbershop' logo">
-			<p class="copyright">&copy; Copyright Alura Barbershop - 2020</p>
+		<footer class="footer">
+			<img src="img/white-logo.png" alt="Alura Barbershop's logo">
+			<p class="footer-copyright">&copy; Copyright Alura Barbershop - 2020</p>
 		</footer>
 	</body>
 </html>

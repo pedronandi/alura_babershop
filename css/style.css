@@ -2,80 +2,21 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-header {
-	background: #BBBBBB;
-	padding: 20px 0;
+.contentSize {
+	width: 940px; /* limited width to left margin */
+	margin: 0 auto; /* auto: calculates equal margins */
 }
 
-.box {
-	position: relative; /*Posição relativa à posição estática para possibilitar deslocamento lateral*/
-	width: 940px; /*Limita a largura para sobrar margens*/
-	margin: 0 auto; /*Margens laterais iguais e calculadas automaticamente*/
-}
-
-nav {
-	position: absolute; /*Posição absoluta em relação à página*/
-	top: 110px; /*Altura do elemento em relação à página*/
-	right: 0; /*Margem direita do elemento em relação à página*/
-}
-
-nav li {
-	display: inline; /*Possibilita a exibição dos itens lado a lado, pois cada item não bloqueará mais sua linha toda*/
-	margin: 0 0 0 15px; /*Cada item com margem à esquerda*/
-}
-
-nav a {
-	text-transform: uppercase;
-	color: #000000;
+strong {
 	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
 }
 
-nav a:hover { /*hover: Quando o cursor do mouse passa por cima do elemento*/
-	color: #C78C19;
-	text-decoration: underline;
+em {
+	font-style: italic;
 }
 
-footer {
-	text-align: center;
-	background: url("../img/bg.jpg"); /*Textura do background*/
-	padding: 40px 0;
-}
-
-.copyright {
-	color: #FFFFFF;
-	font-size: 13px;
-	margin: 20px 0 0;
-}
-
-/*
-Media Queries: 
-  Perguntar ao navegador qual o tamanho da tela
-  De acordo com a resposta, podemos entregar um estilo diferente
-  Ex: Para dispositivos de tela com largura máxima de 480px
- */
-@media screen and (max-width: 480px) {
-	.box {
-		width: auto;
-	}
-
-	h1 {
-		text-align: center;
-	}
-
-	nav {
-		position: static;
-	}
-}
-
-/*Dispositivo móvel na horizontal*/
 @media screen and (max-width: 820px) {
-	.box {
+	.contentSize {
 		width: auto;
-	}
-
-	nav {
-		right: 2em;
 	}
 }

@@ -1,0 +1,45 @@
+.contactForm {
+	margin: 40px 0;
+}
+
+.contactForm label, legend {
+	display: block; /* blocks the entire line */
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.default-input { /* not all form inputs must be customized */
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.send {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all; /* delays the color's change wich happens on :hover */
+	cursor: pointer; /* changes the cursor's type when it passes over the button */
+}
+
+.send:hover {
+	background: darkorange;
+	transform: scale(1.05); /* new property on CSS3 wich scales all element's properties in 1.05 = 50% */
+	transform: rotate(5deg); /* rotates the element on the screen */
+}
+
+@media screen and (max-width: 480px) {
+	.send {
+		width: 60%;
+	}
+}

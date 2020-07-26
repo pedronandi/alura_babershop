@@ -1,0 +1,60 @@
+.header {
+	padding: 20px 0 0;
+	background: #BBBBBB;
+}
+
+.contentSize_position { /* modifier of .contentSize class */
+	position: relative; /* relative about the static position. enables lateral displacement */
+}
+
+.header-content-nav {
+	position: absolute; /* absolute position over the page */
+	top: 110px; /* heigh's element over the page */
+	right: 0; /* right margin's element over the page */
+}
+
+.header-content-nav li {
+	display: inline; /* enable elements side by side, so each element does not block the whole line */
+	margin: 0 0 0 15px; /* left margin on each element */
+}
+
+.header-content-nav a {
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.header-content-nav a:hover { /*hover: when the mouse's cursor pass over the element */
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.header-bottom-banner {
+	width: 100%;
+	vertical-align: bottom;
+	opacity: 0.5;
+}
+
+/*
+media queries: 
+  asks the browser about the page's size
+  we can deliver a proper style for each size
+*/
+@media screen and (max-width: 480px) {
+	.contentSize_position h1 {
+		text-align: center;
+	}
+
+	.header-content-nav {
+		position: static;
+	}
+}
+
+/* horizontal view */
+@media screen and (max-width: 820px) {
+	.header-content-nav {
+		right: 2em;
+	}
+}

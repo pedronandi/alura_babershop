@@ -1,0 +1,18 @@
+.section-title {
+	padding: 0 0 1em;
+	clear: left; /* blocks the 'float' effect */
+	text-align: center;
+	color: rgba(0,0,0,0.5); /* 50% opacity setted over the color */
+	font-weight: bold;
+	font-size: 2em; /* em: pixel's proportional measure. 2em = 2x base font size */
+}
+
+em strong {
+	color: #FF0000;
+}
+
+@media screen and (max-width: 820px) {
+	.section-title {
+		font-size: 1.5em;
+	}	
+}

@@ -6,16 +6,18 @@
 		<title>Products - Alura Barbershop</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/products.css">
+		<link rel="stylesheet" href="css/block/header.css">
+		<link rel="stylesheet" href="css/block/products.css">
+		<link rel="stylesheet" href="css/block/footer.css">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<header>
-			<!--Envelopa os itens do cabeçalho para possibilitar a edição das margens laterais-->
-			<div class="box">
+		<header class="header">
+			<!--div is visual block, a division with no semantics purpose-->
+			<div class="contentSize contentSize_position">
 				<h1><img src="img/logo.png" alt="Alura Barbershop's logo"></h1>
 				
-				<nav>
+				<nav class="header-content-nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="#">Products</a></li>
@@ -24,9 +26,8 @@
 				</nav>
 			</div>
 		</header>
-
 		<main>
-			<ul class="products">
+			<ul class="contentSize contentSize_products">
 				<li>
 					<h2>Hair</h2>
 					<img src="img/hair.jpg" class="product-img">
@@ -48,9 +49,9 @@
 			</ul>
 		</main>
 
-		<footer>
+		<footer class="footer">
 			<img src="img/white-logo.png" alt="Alura Barbershop's logo">
-			<p class="copyright">&copy; Copyright Alura Barbershop - 2020</p>
+			<p class="footer-copyright">&copy; Copyright Alura Barbershop - 2020</p>
 		</footer>
 	</body>
 </html>
